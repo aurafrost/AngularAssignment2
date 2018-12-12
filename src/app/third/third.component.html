@@ -1,0 +1,14 @@
+<p>Third Component</p>
+<p>Date: {{date}}</p>
+<p>{{name}} {{address}} {{city}}</p>
+<form #info='ngForm' (ngSubmit)='onSubmit(info.value)'>
+  Name: <input type='text' name='name' ngModel><br>
+  Address: <input type='text' name='address' ngModel><br>
+  City: <select name='city' ngModel>
+    <option value='Atlanta' ngModel>Atlanta</option>
+    <option value='New York' ngModel>New York</option>
+    <option value='Tokyo' ngModel>Tokyo</option>
+  </select><br>
+  <input type='submit' value='Show'><br>
+</form>
+<hr>

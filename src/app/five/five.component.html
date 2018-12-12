@@ -1,0 +1,7 @@
+<p>Fifth Component</p>
+<form #info='ngForm' (ngSubmit)='onSubmit(info.value)'>
+  Age: <input type='number' name='age' ngModel><br>
+  <input type='submit' value='Validate'><br>
+</form>
+<p>{{msg}}</p>
+<hr>

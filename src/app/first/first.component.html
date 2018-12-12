@@ -1,0 +1,11 @@
+<p>First Component</p>
+<p>Date: {{date}}</p>
+<p>{{name}} {{address}} {{age}}</p>
+<form #info='ngForm' (ngSubmit)='onSubmit(info.value)'>
+  Name: <input type='text' name='name' ngModel><br>
+  Address: <input type='text' name='address' ngModel><br>
+  Age: <input type='number' name='age' ngModel><br>
+  <input type='submit' value='Show'><br>
+</form>
+
+<hr>
